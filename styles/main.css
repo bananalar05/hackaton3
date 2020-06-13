@@ -1,0 +1,47 @@
+/*Relas globales*/
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+h1{
+    position: absolute;
+}
+.about-me{
+    background: #7299fe;
+    padding: 20px;
+}
+.skills{
+    background: #9122ff;
+    padding: 20px;
+}
+.port{
+    background: #ffd233;
+    padding: 20px;
+}
+.port div div{
+    display: flex;
+
+    }
+
+.customer{
+    background: #3f4e62;
+    padding: 20px;
+}
+.customer div{
+    display: flex;
+}
+
+img{
+    margin-right: 15px;
+}
+.contact{
+    background: #1687a0;
+    padding: 20px;
+}
+
+

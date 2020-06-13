@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIGMA</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
     <main>
-      <section>
+      <section class="header">
         <h1>Pachaqtec</h1>
         <h2>Hola, Mi nombre es Mery Vera</h2>
-        <figure><img src="./images2/banner.png" alt="banner" /></figure>
-        <figure><img src="./images2/hola.png" alt="hola" /></figure>
+        <figure><img src="./images/banner.png" alt="banner" /></figure>
       </section>
-      <section>
+      <section class="about-me">
         <h2>Sobre mi</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed
@@ -30,7 +31,7 @@
         </p>
         <a href="https://www.google.com.pe/">Ver Cv</a>
       </section>
-      <section>
+      <section class="skills">
         <h2>Mis Skills</h2>
         <!--Mejor es usar div en vez de ul-li, porque REACT no acepta qe dentro de 1 ul haya divs, sino alreves por la relevancia-->
         <div>
@@ -58,24 +59,32 @@
           <div></div>
         </div>
       </section>
-      <section>
+      <section class="port">
         <h2>Portafolio</h2>
-        <figure><img src="./images2/image-4.png" alt="img4" /></figure>
-        <figure><img src="./images2/image-5.png" alt="img5" /></figure>
-        <figure><img src="./images2/image-6.png" alt="img6" /></figure>
-        <figure><img src="./images2/image-7.png" alt="img7" /></figure>
-        <figure><img src="./images2/image-8.png" alt="img8" /></figure>
-        <figure><img src="./images2/image-9.png" alt="img9" /></figure>
-        <figure><img src="./images2/image-10.png" alt="img10" /></figure>
+        <div>
+          <div>
+            <figure><img src="./images/image-4.png" alt="img4" /></figure>
+            <figure><img src="./images/image-5.png" alt="img5" /></figure>
+            <figure><img src="./images/image-6.png" alt="img6" /></figure>
+            <figure><img src="./images/image-7.png" alt="img7" /></figure>
+          </div>
+          <div>
+            <figure><img src="./images/image-8.png" alt="img8" /></figure>
+            <figure><img src="./images/image-9.png" alt="img9" /></figure>
+            <figure><img src="./images/image-10.png" alt="img10" /></figure>
+          </div>
+        </div>
       </section>
-      <section>
+      <section class="customer">
         <h2>Clientes</h2>
-        <figure><img src="./images2/image.png" alt="img0" /></figure>
-        <figure><img src="./images2/image-1.png" alt="img1" /></figure>
-        <figure><img src="./images2/image-2.png" alt="img2" /></figure>
-        <figure><img src="./images2/image-3.png" alt="img3" /></figure>
+        <div>
+          <figure><img src="./images/image.png" alt="img0" /></figure>
+          <figure><img src="./images/image-1.png" alt="img1" /></figure>
+          <figure><img src="./images/image-2.png" alt="img2" /></figure>
+          <figure><img src="./images/image-3.png" alt="img3" /></figure>
+        </div>
       </section>
-      <section>
+      <section class="contact">
         <h2>Contacto</h2>
         <form action="#">
           <div>
