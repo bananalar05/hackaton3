@@ -1,33 +1,55 @@
-/*Relas globales*/
+/*REGLAS GLOBALES*/
 main {
     width: 960px;
     margin: 0 auto;
 }
 
 h2{
+    /*Posicionamiento*/
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    /*Tipografía*/
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
 }
 
+img{
+    margin-right: 15px;
+}
+
+/*REGLAS ESPECIFICAS*/
+
+/*Reglas del h1*/
 h1{
     position: absolute;
 }
+
+/*Reglas acerca de mi*/
 .about-me{
     background: #7299fe;
     padding: 20px;
 }
+
+/*Reglas de mis skills*/
 .skills{
     background: #9122ff;
     padding: 20px;
 }
+
+/*Reglas de portafolio*/
 .port{
     background: #ffd233;
     padding: 20px;
 }
 .port div div{
     display: flex;
-
     }
 
+/*Reglas de clientes*/
 .customer{
     background: #3f4e62;
     padding: 20px;
@@ -36,12 +58,22 @@ h1{
     display: flex;
 }
 
-img{
-    margin-right: 15px;
-}
+/*Reglas de contacto*/
 .contact{
     background: #1687a0;
     padding: 20px;
 }
 
+/*Pseudoclases de validación*/
+input:required {
+    border: 1px solid red;
+}
+
+input:valid {
+     border: 1px solid green;
+}
+
+input:focus {
+    background: palevioletred;
+}
 
