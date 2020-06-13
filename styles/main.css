@@ -34,12 +34,27 @@ h1{
     padding: 20px;
 }
 
+.about-me div{
+    margin-top: 30px;
+    display: inline-block;
+      /*Fondo*/
+    background: #d16fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: solid;
+    padding: 10px;
+    }
+
 /*Reglas de mis skills*/
 .skills{
     background: #9122ff;
     padding: 20px;
 }
 
+.skills div {
+    display: flex;
+    justify-content: space-between;
+}
 /*Reglas de portafolio*/
 .port{
     background: #ffd233;
