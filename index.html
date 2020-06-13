@@ -84,7 +84,7 @@
           </div>
           <div>
             <input name="email" type="email" placeholder="E-mail" required/>
-            <input name="DNI" type="number" placeholder="DNI" pattern="[A-Za-z0-9 ]+" minlength="8" required />
+            <input name="DNI" type="text" placeholder="DNI" pattern="[A-Za-z0-9 ]+" minlength="8" required />
           </div>
           <div>
             <input name="age" type="number" placeholder="Edad" min="18" max="80" required />
@@ -92,10 +92,10 @@
               <label>Sexo</label>
               <div>
                 <label>Femenino
-                  <input name="gender" type="radio" name="sex" checked />
+                  <input name="gender" value="F" type="radio" name="sex" checked />
                 </label>
                 <label>Masculino
-                  <input name="gender" type="radio" name="sex" />
+                  <input name="gender" value="M" type="radio" name="sex" />
                 </label>
               </div>
             </div>
