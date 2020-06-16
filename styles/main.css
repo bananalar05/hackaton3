@@ -2,186 +2,61 @@
 main {
     width: 960px;
     margin: 0 auto;
-    position: relative;
+    height: 1650px;
+    
+    font-family: helvetica;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+    background: rgba(13, 243, 205, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+
+    font-size: 40px;
+    text-align: center;
+
+    color: white;
+}
+
+section{
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: thistle;
 }
 
 h2{
     /*Posicionamiento*/
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    /*Tipografía*/
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-}
-
-h1{
-    /*la posición será absoluta en funcion del main que tacitamente es relativo???*/
-    /*tuve que hacer una posicion relativa a .header*/
-    /*usualmente el h1 siempre es regla general*/
-    /*adiferencia del .header h2 - acá le puse width:100%  para que ocupe todo el ancho de la caja que lo contiene, porque no necesitaba un fondo de color*/
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50px;
-
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 74px;
-    background-color: black;
-     
-    color: #ffff;
-}
-
-/*Pseudoclases de validación*/
-input:required {
-    border: 1px solid red;
-}
-
-input:valid {
-     border: 1px solid green;
-}
-
-input:focus {
-    background: palevioletred;
-}
-
-/*REGLAS ESPECIFICAS*/
-/*Regla para el h del header*/
-.header{
-    pposition: relative;
-}
-
-.header h2{
-    /*la posición será absoluta en funcion del main que tacitamente es relativo??*/
-    /*para se posicionara bien y no cambie en funcion de aumentar o bajar zoom, puse un relativo al .header*/
-    position: absolute;
-    width: 365px;
-    height: 80px;
-    left: 52px;
-    top: 300px;
-    background: rgba(114, 153, 254, 0.5);
-    border-radius: 10px;
-    padding: 10px;
-
-    font-family: helvetica;
-    font-style: normal;
-    font-weight: bold;
     font-size: 30px;
-    line-height: 42px;
-
     color: white;
 }
 
-/*Regla para eliminar el espacio blanco debajo del banner*/
-.header img{
-    display: block;
+p{ 
+    font-size: 26px;
+    color: black;
+    padding: 30px;
 }
 
-/*Reglas acerca de mi*/
-.about-me{
-    background: #7299fe;
+/*Reglas específicas*/
+div{
+    width: 50%;
     padding: 40px;
+    margin: auto;
 }
 
-/*Reglas del boton a href*/
-.about-me div{
-    margin-top: 25px;
-    display: inline-block;
-    
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #d16fff;
-    border-radius: 30px;
-    border: solid;
-    padding: 10px 30px;
-    }
-
-/*Reglas de mis skills*/
-.skills{
-    background: #9122ff;
-    padding: 40px;
-}
-
-.skills div {
-    display: flex;
-    justify-content: space-between;
-}
-/*Reglas de portafolio*/
-.port{
-    background: #ffd233;
-    padding: 40px;
-}
-.port div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 120px);
-    background-color: blanchedalmond;
-    /*alinea horizontalmente*/
-    justify-items: center;
-    /*alinea verticalmente*/
-    align-items: center;
-    }
-
-/*Reglas de clientes*/
+.about-me,
 .customer{
-    background: #3f4e62;
-    padding: 40px;
-}
-.customer div{
-    display: flex;
-    justify-content: space-between;
-    background-color: blanchedalmond;
-    /*alinea horizontalmente*/
-    justify-items: center;
-    /*alinea verticalmente*/
-    align-items: center;
+    background: #3f4e62; 
 }
 
-/*Reglas de contacto*/
+.skills,
 .contact{
-    height: 450px;
-    background: #1687a0;
-    padding: 40px;
-}
-
-.contact div {
-    width: 700px;
-    margin: 0 auto;
-    background-color: antiquewhite;  
-}
-
-form div input{
-    width: 320px;
-    height: 50px;
-    margin-right: 12px;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-form div select{
-    width: 328px;
-    height: 59px;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-form div textarea{
-    width: 665px;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-button{
-    width: 150px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin: 0 auto;
+    background: #ffd233;
 }
