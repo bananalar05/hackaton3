@@ -70,17 +70,16 @@
         <section class="port">
           <h2>Portafolio</h2>
           <div>
-            <div>
+
               <figure><img src="./images/image-4.png" alt="img4" /></figure>
               <figure><img src="./images/image-5.png" alt="img5" /></figure>
               <figure><img src="./images/image-6.png" alt="img6" /></figure>
               <figure><img src="./images/image-7.png" alt="img7" /></figure>
-            </div>
-            <div>
+
               <figure><img src="./images/image-8.png" alt="img8" /></figure>
               <figure><img src="./images/image-9.png" alt="img9" /></figure>
               <figure><img src="./images/image-10.png" alt="img10" /></figure>
-            </div>
+
         </div>
       </section>
       <section class="customer">
@@ -94,40 +93,33 @@
       </section>
       <section class="contact">
         <h2>Contacto</h2>
-        <form action="#">
-          <div>
-            <input name="names" type="text" placeholder="Nombres" pattern="[A-Za-z ]+" required/>
-            <input name="last names" type="text" placeholder="Apellidos" pattern="[A-Za-z ]+" required/>
-          </div>
-          <div>
+        <div>
+          <form action="#">
+            <div>
+              <input name="names" type="text" placeholder="Nombres" pattern="[A-Za-z ]+" required/>
+              <input name="last names" type="text" placeholder="Apellidos" pattern="[A-Za-z ]+" required/>
+           </div>
+           <div>
             <input name="email" type="email" placeholder="E-mail" required/>
             <input name="DNI" type="text" placeholder="DNI" pattern="[A-Za-z0-9 ]+" minlength="8" required />
-          </div>
-          <div>
+           </div>
+           <div>
             <input name="age" type="number" placeholder="Edad" min="18" max="80" required />
-            <div>
-              <label>Sexo</label>
-              <div>
-                <label>Femenino
-                  <input value="F" type="radio" name="sex" checked />
-                </label>
-                <label>Masculino
-                  <input value="M" type="radio" name="sex" />
-                </label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <label
-              >Descripción <br />
-              <textarea cols="83" rows="5"></textarea>
-            </label>
-          </div>
-          <div>
+            <select>
+              <option>Sexo</option>
+              <option name="sex" value="F">Femenino</option>
+              <option name="sex" value="M">Masculino</option>              
+            </select>
+           </div>
+           <div>
+            <textarea placeholder="Comentarios" cols="83" rows="5"></textarea>
+           </div>
+           <div>
             <button>Enviar</button>
             <button type="reset">Resetear</button>
-          </div>
-        </form>
+           </div>
+          </form>
+        </div>
       </section>
     </main>
   </body>
